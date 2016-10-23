@@ -20,5 +20,65 @@
 
         <!-- load stuff later -->
 
+        <h1>My First Google Map</h1>
+
+        <div id="map" style="width:100%;height:500px"></div>
+
+        <script>
+        function myMap() {
+          var mapCanvas = document.getElementById("map");
+          var langitude = new google.maps.LatLng(52.455478, 13.524828);
+
+          var mapOptions = {
+              center: langitude,
+              zoom: 15,
+              disableDefaultUI: true
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+
+          var contentString = "<div id='contentMarker'>" +
+
+
+         " <h1> HELLO WORLD!!!</h1>" +
+
+         "<style> #contentMarker { background-color: #333; } </style>" +
+
+          "</div>";
+
+          var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+
+          var marker = new google.maps.Marker({
+              position: langitude,
+              map: map,
+              title: 'Was geht ab Burder?'
+         });
+
+         marker.addListener('click', function(){
+              infowindow.open(map, marker);
+         });
+
+        }
+
+        var Marker = (function(){
+
+            function Greeter(title, description, address, longitude) {
+                this.title = title;
+                this.description = description;
+                this.address = address;
+                this.longitude = longitude;
+            }
+
+        })();
+
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+        <script>
+            document.getElementById("map").className = "";
+        </script>
+
   	</body>
 </html>
