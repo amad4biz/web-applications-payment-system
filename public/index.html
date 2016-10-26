@@ -38,10 +38,9 @@
 
           var contentString = "<div id='contentMarker'>" +
 
+         " <h1> HTW Berlin!!!</h1>" +
 
-         " <h1> HELLO WORLD!!!</h1>" +
-
-         "<style> #contentMarker { background-color: #333; } </style>" +
+         "<style> #contentMarker { background-color: white; } </style>" +
 
           "</div>";
 
@@ -50,7 +49,7 @@
           });
 
           var marker = new google.maps.Marker({
-              position: currentEvent.getLo,
+              position: langitude,
               map: map,
               title: 'Was geht ab Burder?'
          });
@@ -61,41 +60,9 @@
 
         }
 
-        var Marker = (function(){
-
-            function Marker(title, description, address, latitude, longitude) {
-                this.title = title;
-                this.description = description;
-                this.address = address;
-                this.latitude = latitude;
-                this.longitude = longitude;
-            }
-
-            Marker.prototype.hey = function(){
-                return "hey";
-            }
-
-            Marker.prototype.value = "value";
-
-            return Marker;
-
-        })();
-
-
-
-        var marker = new Marker("Tunisia", "I love Tunisia!", "Tunis, Street 10, 21834 Area", 52.455478, 13.524828);
-        // marker.hey();
-
-        console.log(marker.hey());
-        console.log(marker.value);
-
         </script>
 
         <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-
-        <script>
-            document.getElementById("map").className = "";
-        </script>
 
   	</body>
 </html>
