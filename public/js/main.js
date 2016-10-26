@@ -31,3 +31,31 @@ var client = (function(){
 })();
 
 client.init();
+
+
+function $(selector){
+    this.selector = selector;
+}
+
+$.prototype.ajax(data){
+    return "ajax" + data;
+}
+
+var x = (function(){
+
+})();
+
+$.ajax({ "lalal" , "lalala"});
+
+$("hey").add("was geht");
+
+
+
+Ahmed.hallo({
+    on: function(){
+
+    },
+    off: function(){
+        
+    }
+})
