@@ -7,5 +7,10 @@
     "keywords": [
         "web",
         "application"
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/thiloilg/web-applications-expressjs.git"
+    },
+    "license": "UNLICENSED"
 }
