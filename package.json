@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "web application build on expressjs",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiloilg/web-applications-expressjs.git"
+  },
+  "keywords": [
+    "web",
+    "application"
+  ],
+  "author": "Thilo Ilg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thiloilg/web-applications-expressjs/issues"
+  },
+  "homepage": "https://github.com/thiloilg/web-applications-expressjs#readme"
+}
